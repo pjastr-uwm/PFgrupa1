@@ -16,6 +16,10 @@ class TestCalculator(unittest.TestCase):
     def test_check_sum_string(self):
         self.assertEqual(self.calculator.add("aa", "bb"), "aabb")
 
+    def test_divide_zero_divisor(self):
+        with self.assertRaises(ZeroDivisionError):
+            self.calculator.divide(5,0)
+
     def tearDown(self):
         pass
 

@@ -1,6 +1,7 @@
 import unittest
 from src.fibonacci import fibonacci
 
+
 class TestFibonacci(unittest.TestCase):
 
     def setUp(self):

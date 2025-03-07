@@ -1,4 +1,4 @@
-class TodoList():
+class TodoList:
 
     def __init__(self, tasks):
         if not isinstance(tasks, list):

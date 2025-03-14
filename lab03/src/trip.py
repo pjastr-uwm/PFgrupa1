@@ -13,6 +13,3 @@ class Trip:
             raise ValueError("Participant name cannot be empty")
 
         self.participants.append(param)
-
-
-

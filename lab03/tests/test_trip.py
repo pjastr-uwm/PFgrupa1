@@ -13,7 +13,7 @@ class TestTripInitialization(unittest.TestCase):
 
     def test_initilization(self):
         trip1 = Trip("Paris", 7)
-        self.assertEqual(trip1.desitination, "Paris")
+        self.assertEqual(trip1.destination, "Paris")
         self.assertEqual(trip1.duration, 7)
 
     def tearDown(self):

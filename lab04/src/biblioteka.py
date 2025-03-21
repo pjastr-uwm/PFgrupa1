@@ -29,6 +29,8 @@ class Biblioteka():
         return wyniki
 
     def wypozycz(self, id_ksiazki, czytelnik_id):
+        # pylint: disable=C0200
+        # no error
         for i in range(0, len(self.ksiazki)):
             if self.ksiazki[i]['id'] == id_ksiazki:
                 if not self.ksiazki[i]['wypozyczona']:

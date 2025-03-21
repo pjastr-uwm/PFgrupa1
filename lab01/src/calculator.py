@@ -7,3 +7,4 @@ class Calculator:
         if y == 0:
             raise ZeroDivisionError
         return x / y
+        

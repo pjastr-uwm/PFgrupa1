@@ -5,10 +5,11 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./lab06
     steps:
       - uses: actions/checkout@v2
-      - name: Setup dir
-        working-directory: ./lab05
       - name: Set up Python
         uses: actions/setup-python@v2
         with:

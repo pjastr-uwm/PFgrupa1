@@ -20,7 +20,7 @@ jobs:
       - name: Run tests with coverage
         run: |
           coverage run -m --branch unittest discover -s tests
-          coverege report -m
+          coverage report -m
           coverage html
       - name: Upload coverage report as artifact
         uses: actions/upload-artifact@v4

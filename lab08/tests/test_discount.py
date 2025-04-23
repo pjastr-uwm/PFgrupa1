@@ -13,3 +13,7 @@ class TestDiscount:
     def test_invalid_discount(self):
         with pytest.raises(ValueError):
             calculate_discounted_price(455, "A")
+
+    def test_negative_price(self):
+        with pytest.raises(ValueError):
+            calculate_discounted_price(-4, 23)

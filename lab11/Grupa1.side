@@ -126,6 +126,107 @@
         ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "1818eb83-28db-4571-8af5-4980954fbfa8",
+      "comment": "",
+      "command": "click",
+      "target": "id=flash",
+      "targets": [
+        ["id=flash", "id"],
+        ["css=#flash", "css:finder"],
+        ["xpath=//div[@id='flash']", "xpath:attributes"],
+        ["xpath=//div[@id='flash-messages']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e6614c6-8bd4-407f-9c31-28fa9180dd3c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=flash",
+      "targets": [],
+      "value": "Abc"
+    }, {
+      "id": "a33479d9-9607-4a1b-aab1-7b6bce025e88",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1a181420-d7b1-4fc1-9572-2a89b1bacd57",
+    "name": "logowanie2",
+    "commands": [{
+      "id": "14d30f9f-aef4-4fb0-8676-dcf1ac4ce5a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19b0f97f-087d-4f85-b535-4cd506d05c25",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1417x715",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6838e07-0af0-4a0f-b1df-5c8652327d70",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Form Authentication",
+      "targets": [
+        ["linkText=Form Authentication", "linkText"],
+        ["css=li:nth-child(21) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Form Authentication')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[21]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[21]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Form Authentication')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2f32c2-0b8a-4f05-a367-9320f8d9013c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomsmith"
+    }, {
+      "id": "0751facc-1a95-4b85-ba26-6706052cc19c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "SuperSecretPassword!"
+    }, {
+      "id": "a71ad0d5-abaf-42a8-a3c0-a10dfc764bda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.radius",
+      "targets": [
+        ["css=.radius", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": ""
     }]
   }],
   "suites": [{
